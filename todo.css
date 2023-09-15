@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Monospace',cursive;
+}
+
+body {
+    background:rgb(249, 187, 197);
+}
+/* --------------------- Main Container------------------- */
+.main-container {
+  display: flex;
+  width: 100vw;
+  height: auto;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.wrapper {
+  background:rgb(12, 12, 12);
+  color: white;
+  padding: 20px;
+  border-radius: 4px;
+  box-shadow: 0 0 7px 7px rgb(0 0 0 / 20%);
+  min-height: 400px;
+}
+/* --------------------Heading------------------- */
+.heading h1 {
+  font-family: 'Brush Script MT' ,cursive;
+  text-align: center;
+  color: whitesmoke;
+  font-size: 40px;
+  margin-bottom: 10px;
+}
+.heading i{
+    font-size: 30px;
+    color:rgb(244, 230, 230);
+    letter-spacing: 5px;
+}
+.input-wrapper {
+  margin-bottom: 20px;
+}
+.input-wrapper input {
+    outline: none;
+    width:65vw; 
+    border: 0;
+    background-color:rgb(250, 215, 215);
+    padding: 10px;
+    color:  black;
+    
+}
+
+
+/* ====================Submit (ADD Button)================== */
+.input-wrapper button {
+    background:rgb(249, 187, 197);
+    color:whitesmoke;
+    border: 0;
+    padding: 10px;
+    font-weight: bold;
+    border-radius: 2px;
+    cursor: pointer;
+}
+.todo-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  border-bottom: 1px solid rgba(0,0,0,0.2);
+  padding-bottom: 10px;
+}
+.todo-item input {
+  background: transparent;
+  border: navajowhite;
+  color:  #f1a7c0;
+  outline: none;
+}
+.todo-item i{
+  color: #f1a7c0;
+  background: transparent;
+  border: 1px solid;
+  border-radius: 50%;
+  padding: 6px;
+  cursor: pointer;
+  transition: 0.2s ease-in-out;
+  margin-left: 5px;
+}
+.todo-item button:hover {
+  color: white;
+}
+.done {
+  text-decoration: line-through;
+}
+#task{
+    text-decoration: underline;
+}
+
